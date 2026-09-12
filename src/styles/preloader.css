@@ -1,0 +1,344 @@
+/* ==========================================================================
+   INITIAL BOOT & PRELOADER SCREEN STYLES
+   Rasfalz Studio — Creative & Energy
+   ========================================================================== */
+
+.boot-loader-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-main, #191919);
+  color: var(--text-primary, #ffffff);
+  user-select: none;
+  overflow: hidden;
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              visibility 0.5s ease;
+}
+
+.boot-loader-overlay.boot-exiting {
+  opacity: 0;
+  transform: scale(1.04);
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+/* Ambient Ambient Glows */
+.boot-ambient-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.28;
+  pointer-events: none;
+  animation: bootAmbientPulse 4s ease-in-out infinite alternate;
+}
+
+.boot-ambient-glow.glow-orange {
+  top: 20%;
+  left: 30%;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, #FF9C0F 0%, rgba(255, 156, 15, 0) 70%);
+}
+
+.boot-ambient-glow.glow-blue {
+  bottom: 20%;
+  right: 30%;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, #0052F5 0%, rgba(0, 82, 245, 0) 70%);
+  animation-delay: 1.5s;
+}
+
+@keyframes bootAmbientPulse {
+  0% {
+    transform: scale(0.9) translate(-10px, -10px);
+    opacity: 0.22;
+  }
+  100% {
+    transform: scale(1.15) translate(10px, 10px);
+    opacity: 0.38;
+  }
+}
+
+/* Boot Content Card */
+.boot-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 440px;
+  width: 90%;
+  padding: 32px 24px;
+  animation: bootContentFadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes bootContentFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Logo & Rotating Orbit Ring */
+.boot-logo-wrapper {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boot-orbit-ring {
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: var(--color-orange, #FF9C0F);
+  border-right-color: var(--color-blue, #0052F5);
+  animation: bootOrbitSpin 2.4s linear infinite;
+  filter: drop-shadow(0 0 8px rgba(255, 156, 15, 0.4));
+}
+
+.boot-orbit-ring-secondary {
+  position: absolute;
+  inset: -14px;
+  border-radius: 50%;
+  border: 1.5px dashed rgba(255, 156, 15, 0.25);
+  animation: bootOrbitSpinReverse 7s linear infinite;
+}
+
+@keyframes bootOrbitSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bootOrbitSpinReverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.boot-logo-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 22px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), 0 0 0 2px rgba(255, 156, 15, 0.3);
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+/* Typography & Titles */
+.boot-brand-title {
+  font-family: var(--font-display, 'Creato Display', sans-serif);
+  font-size: clamp(1.6rem, 5vw, 2.1rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  margin-bottom: 6px;
+  line-height: 1.15;
+  background: linear-gradient(135deg, var(--text-primary, #ffffff) 40%, var(--color-orange, #FF9C0F) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.boot-brand-tagline {
+  font-family: var(--font-subheading, 'Laro Soft', 'Poppins', sans-serif);
+  font-size: 0.86rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text-muted, #9E9E9E);
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+/* Modern High-Tech Progress Track */
+.boot-progress-section {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.boot-progress-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.8rem;
+  font-family: var(--font-mono, monospace);
+}
+
+.boot-status-msg {
+  color: var(--text-secondary, #E2E2E2);
+  font-size: 0.82rem;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 80%;
+  transition: color 0.2s ease;
+}
+
+.boot-pct-number {
+  color: var(--color-orange, #FF9C0F);
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+
+.boot-progress-track {
+  width: 100%;
+  height: 7px;
+  background: rgba(125, 125, 125, 0.15);
+  border-radius: var(--radius-pill, 9999px);
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.boot-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #0052F5 0%, #7928CA 50%, #FF9C0F 100%);
+  background-size: 200% 100%;
+  border-radius: var(--radius-pill, 9999px);
+  transition: width 0.16s ease-out;
+  position: relative;
+  box-shadow: 0 0 12px rgba(255, 156, 15, 0.6);
+  animation: bootShimmerFill 1.8s ease infinite linear;
+}
+
+@keyframes bootShimmerFill {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* System Details & Skip Footer */
+.boot-meta-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.06));
+}
+
+.boot-system-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  font-family: var(--font-mono, monospace);
+  color: var(--text-muted, #9E9E9E);
+  background: rgba(125, 125, 125, 0.1);
+  padding: 4px 10px;
+  border-radius: var(--radius-pill, 9999px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.boot-chip-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #10B981;
+  box-shadow: 0 0 6px #10B981;
+  animation: bootDotPulse 1.4s ease infinite alternate;
+}
+
+@keyframes bootDotPulse {
+  0% { opacity: 0.5; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1.2); }
+}
+
+.boot-skip-btn {
+  font-family: var(--font-body, 'Poppins', sans-serif);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted, #9E9E9E);
+  background: transparent;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill, 9999px);
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.boot-skip-btn:hover {
+  color: var(--color-orange, #FF9C0F);
+  background: rgba(255, 156, 15, 0.08);
+  border-color: rgba(255, 156, 15, 0.2);
+}
+
+/* Light Theme Adjustments */
+[data-theme='light'] .boot-loader-overlay {
+  background-color: var(--bg-main, #F8F8FF);
+}
+
+[data-theme='light'] .boot-progress-track {
+  background: #E2E8F0;
+  border-color: #CBD5E1;
+}
+
+[data-theme='light'] .boot-system-chip {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 480px) {
+  .boot-content {
+    padding: 24px 16px;
+  }
+  .boot-logo-wrapper {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 18px;
+  }
+  .boot-logo-img {
+    width: 68px;
+    height: 68px;
+    border-radius: 18px;
+  }
+  .boot-brand-title {
+    font-size: 1.5rem;
+  }
+  .boot-brand-tagline {
+    font-size: 0.78rem;
+    margin-bottom: 20px;
+  }
+  .boot-ambient-glow.glow-orange {
+    width: 250px;
+    height: 250px;
+  }
+  .boot-ambient-glow.glow-blue {
+    width: 250px;
+    height: 250px;
+  }
+}

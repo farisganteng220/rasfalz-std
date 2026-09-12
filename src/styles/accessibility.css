@@ -1,0 +1,172 @@
+/* ==========================================================================
+   ACCESSIBILITY (A11Y) LIVE CSS SYSTEM
+   Rasfalz Studio OS - Comprehensive Accessibility Tokens & Styles
+   ========================================================================== */
+
+/* ────────────────────────────────────────────
+   1. HIGH CONTRAST MODE
+   ──────────────────────────────────────────── */
+html[data-high-contrast="true"] {
+  --text-primary: #000000 !important;
+  --text-secondary: #111111 !important;
+  --text-muted: #222222 !important;
+  --bg-main: #FFFFFF !important;
+  --bg-surface: #FFFFFF !important;
+  --bg-surface-elevated: #FFFFFF !important;
+  --bg-card: #FFFFFF !important;
+  --border-subtle: #000000 !important;
+  --border-medium: #000000 !important;
+  --color-orange: #CC5500 !important;
+  --color-blue: #0033CC !important;
+}
+
+html[data-theme="dark"][data-high-contrast="true"] {
+  --text-primary: #FFFFFF !important;
+  --text-secondary: #EEEEEE !important;
+  --text-muted: #DDDDDD !important;
+  --bg-main: #000000 !important;
+  --bg-surface: #000000 !important;
+  --bg-surface-elevated: #000000 !important;
+  --bg-card: #000000 !important;
+  --border-subtle: #FFFFFF !important;
+  --border-medium: #FFFFFF !important;
+  --color-orange: #FFA500 !important;
+  --color-blue: #3399FF !important;
+}
+
+html[data-high-contrast="true"] * {
+  text-shadow: none !important;
+}
+
+html[data-high-contrast="true"] button,
+html[data-high-contrast="true"] a,
+html[data-high-contrast="true"] input,
+html[data-high-contrast="true"] .glass-card,
+html[data-high-contrast="true"] .os-widget,
+html[data-high-contrast="true"] .desktop-shelf,
+html[data-high-contrast="true"] .android-bottom-dock {
+  border-width: 2px !important;
+  border-color: currentColor !important;
+}
+
+/* ────────────────────────────────────────────
+   2. DYSLEXIC-FRIENDLY FONT
+   ──────────────────────────────────────────── */
+html[data-dyslexic-font="true"] body,
+html[data-dyslexic-font="true"] * {
+  font-family: 'OpenDyslexic', 'Comic Sans MS', 'Trebuchet MS', sans-serif !important;
+  letter-spacing: 0.04em !important;
+  word-spacing: 0.12em !important;
+}
+
+/* ────────────────────────────────────────────
+   3. REDUCED MOTION
+   ──────────────────────────────────────────── */
+html[data-reduced-motion="true"] *,
+html[data-reduced-motion="true"] *::before,
+html[data-reduced-motion="true"] *::after {
+  animation: none !important;
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* ────────────────────────────────────────────
+   4. COLOR BLIND & GRAYSCALE FILTERS
+   ──────────────────────────────────────────── */
+html[data-color-filter="grayscale"] {
+  filter: grayscale(100%) !important;
+}
+
+html[data-color-filter="protanopia"] {
+  filter: url('data:image/svg+xml,\
+    <svg xmlns="http://www.w3.org/2000/svg">\
+      <filter id="protanopia">\
+        <feColorMatrix type="matrix" values="\
+          0.567, 0.433, 0,     0, 0\
+          0.558, 0.442, 0,     0, 0\
+          0,     0.242, 0.758, 0, 0\
+          0,     0,     0,     1, 0"/>\
+      </filter>\
+    </svg>#protanopia') !important;
+}
+
+html[data-color-filter="deuteranopia"] {
+  filter: url('data:image/svg+xml,\
+    <svg xmlns="http://www.w3.org/2000/svg">\
+      <filter id="deuteranopia">\
+        <feColorMatrix type="matrix" values="\
+          0.625, 0.375, 0,   0, 0\
+          0.700, 0.300, 0,   0, 0\
+          0,     0.300, 0.7, 0, 0\
+          0,     0,     0,   1, 0"/>\
+      </filter>\
+    </svg>#deuteranopia') !important;
+}
+
+html[data-color-filter="tritanopia"] {
+  filter: url('data:image/svg+xml,\
+    <svg xmlns="http://www.w3.org/2000/svg">\
+      <filter id="tritanopia">\
+        <feColorMatrix type="matrix" values="\
+          0.95, 0.05,  0,     0, 0\
+          0,    0.433, 0.567, 0, 0\
+          0,    0.475, 0.525, 0, 0\
+          0,    0,     0,     1, 0"/>\
+      </filter>\
+    </svg>#tritanopia') !important;
+}
+
+/* ────────────────────────────────────────────
+   5. HIGHLIGHT LINKS & FOCUS OUTLINE
+   ──────────────────────────────────────────── */
+html[data-highlight-links="true"] a,
+html[data-highlight-links="true"] button,
+html[data-highlight-links="true"] [role="button"] {
+  text-decoration: underline !important;
+  text-decoration-thickness: 2px !important;
+  text-underline-offset: 3px !important;
+}
+
+html[data-highlight-links="true"] a:focus,
+html[data-highlight-links="true"] button:focus,
+html[data-highlight-links="true"] input:focus,
+html[data-highlight-links="true"] select:focus,
+html[data-highlight-links="true"] textarea:focus,
+html[data-highlight-links="true"] [tabindex]:focus {
+  outline: 3px solid #FF9C0F !important;
+  outline-offset: 3px !important;
+}
+
+/* ────────────────────────────────────────────
+   6. LARGE ACCESSIBLE CURSOR
+   ──────────────────────────────────────────── */
+html[data-large-cursor="true"],
+html[data-large-cursor="true"] * {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="%23000000" stroke="%23FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 3 7 18 3-7 7-3z"/></svg>'), auto !important;
+}
+
+html[data-large-cursor="true"] a,
+html[data-large-cursor="true"] button,
+html[data-large-cursor="true"] [role="button"],
+html[data-large-cursor="true"] input[type="submit"],
+html[data-large-cursor="true"] input[type="button"] {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="%23FF9C0F" stroke="%23000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 3 7 18 3-7 7-3z"/></svg>'), pointer !important;
+}
+
+/* ────────────────────────────────────────────
+   7. WIDE LETTER & LINE SPACING
+   ──────────────────────────────────────────── */
+html[data-wide-spacing="true"] body,
+html[data-wide-spacing="true"] p,
+html[data-wide-spacing="true"] span,
+html[data-wide-spacing="true"] h1,
+html[data-wide-spacing="true"] h2,
+html[data-wide-spacing="true"] h3,
+html[data-wide-spacing="true"] h4,
+html[data-wide-spacing="true"] li {
+  line-height: 1.85 !important;
+  letter-spacing: 0.05em !important;
+  word-spacing: 0.1em !important;
+}
