@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Rasfalz Studio Banner](https://files.catbox.moe/stbl4b.png)
+![Rasfalz Studio Banner](https://files.catbox.moe/s8qjgw.png)
 
 ### **Personal Digital Operating System & Creative Hub**
 *Karya portofolio interaktif berbasis Web OS yang memadukan pengalaman Desktop OS & Mobile Android Material You.*
