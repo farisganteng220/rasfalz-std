@@ -1133,10 +1133,10 @@ Terima kasih atas dukungannya yang tak ternilai bagi Rasfalz Studio!`,
       summary: "Dapatkan Diskon Hingga 70% Untuk Akun Premium Aplikasi Editing Favorit Anda!",
       content: `Kabar gembira untuk para editor dan kreator! 🎉
 
-Dalam rangka memeriahkan suasana, **Rasfalz Studio** mempersembahkan **Promo Spesial Akun Premium**! Nikmati akses penuh ke fitur-fitur profesional dengan harga yang jauh lebih hemat. Jangan lewatkan kesempatan emas ini untuk upgrade alat tempur Anda!
+Dalam rangka memeriahkan suasana, Rasfalz Studio mempersembahkan Promo Spesial Akun Premium! Nikmati akses penuh ke fitur-fitur profesional dengan harga yang jauh lebih hemat. Jangan lewatkan kesempatan emas ini untuk upgrade alat tempur Anda!
 
-📱 **Katalog Promo Aplikasi Premium:**
-• **Alight Motion Premium 1 Tahun**: Mulai Rp 6.000 (Unlock Semua Efek & No Watermark)
+Katalog Promo Aplikasi Premium:
+• Alight Motion Premium 1 Tahun: Mulai Rp 6.000 (Unlock Semua Efek & No Watermark)
 • CapCut Pro Private: Rp 30.000 / bulan (Fitur AI & Ekspor 4K)
 • Canva Pro Member: Rp 10.000 / tahun (Akses 1000+ Aset Eksklusif)
 • Ibis Paint X Full Unlocked: Rp 15.000 / tahun (Bebas Iklan & Kuas Terbuka)
@@ -1156,9 +1156,9 @@ Semua akun terjamin aman dan bergaransi penuh. Cek menu Premium Apps untuk memes
       summary: "Dapatkan Diskon Hingga 70% Untuk Commision & Paid Editing!",
       content: `Kabar gembira untuk para editor dan kreator! 🎉
 
-Dalam rangka memeriahkan suasana, **Rasfalz Studio** mempersembahkan **Promo Spesial Commision & Paid Editing**! Nikmati akses penuh ke fitur-fitur profesional dengan harga yang jauh lebih hemat. Jangan lewatkan kesempatan emas ini untuk upgrade alat tempur Anda!
+Dalam rangka memeriahkan suasana, Rasfalz Studio mempersembahkan Promo Spesial Commision & Paid Editing! Nikmati akses penuh ke fitur-fitur profesional dengan harga yang jauh lebih hemat. Jangan lewatkan kesempatan emas ini untuk upgrade alat tempur Anda!
 
-📱 **Katalog Promo Commision & Paid Editing:**  
+Katalog Promo Commision & Paid Editing:
 - Graphic Design & Art Editing: Rp 15.000 / foto
 - Motion Graphic & Animation Editing: Rp 35.000 / video
 - Video Education & Tugas Sekolah: Rp 20.000 / menit
