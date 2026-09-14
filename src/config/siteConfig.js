@@ -18,15 +18,15 @@ export const siteConfig = {
     role: "Motion & Graphic Designer",
     tagline: "Creative & Energy",
     shortBio: "Halo semuanya, kenalin namaku Raihan Salman Alfarisy, atau biasa dipanggil Raihan/Rasfalz. Saya adalah konten kreator yang bergerak di bidang desain grafis, penyuntingan video, dan fotografi. Saya bergabung dengan komunitas Mletre Unit, Glide Community, Our Creavity Community, Key Frame, Project Z1, Cingire Team, dan Visual Seven. Saya juga merupakan pendiri Matrix Team X Project FXZ. Jika ada pertanyaan, silakan hubungi saya. Terima kasih.",
-    fullBio: `Halo, nama saya Raihan Salman Alfarisy atau lebih dikenal sebagai Rasfalz. Saya berkecimpung dalam bidang desain grafis, penyuntingan video/foto, dan fotografi.
+    fullBio: `Halo, nama saya Raihan Salman Alfarisy atau lebih dikenal sebagai Rasfalz. Saya seorang desainer grafis dan media seperti, desain grafis, videografi, motion grafis, dan fotografi.
 
-'Rasfalz' adalah identitas kreator konten asal Indonesia yang menyajikan karya penyuntingan serta kreativitas yang memikat audiens. Nama "Rasfalz" diambil dari nama lengkap saya, Raihan Salman Alfarisy, yang kemudian disingkat menjadi Rasfalz. Anda dapat menemukan akun saya di berbagai platform media sosial populer seperti TikTok, YouTube, dan Instagram.
+'Rasfalz' adalah identitas kreator konten asal Indonesia yang menyajikan karya editing serta kreativitas yang memikat audiens. Nama "Rasfalz" diambil dari nama lengkap saya, Raihan Salman Alfarisy, yang kemudian disingkat menjadi Rasfalz. Kalian dapat menemukan akunku di berbagai platform media sosial populer seperti TikTok, YouTube, Facebook, dan Instagram.
 
-Rasfalz memulai kiprahnya pada Juli 2021; sebelumnya saya menggunakan nama 'Raihan AM' dengan konten bertema *Jedag-Jedug*, namun kini saya mulai merambah ke konten fotografi, *motion graphics*, GFX (Poster Anime), desain grafis, dan video AMV.
+Rasfalz memulai kiprahnya pada Juli 2021; sebelumnya saya menggunakan nama 'Raihan AM' dengan konten bertema Jedag-Jedug, namun kini saya mulai merambah ke konten fotografi, motion graphics, GFX (Poster Anime), desain grafis, dan video AMV.
 
-Saya telah membuat konten semacam ini selama beberapa tahun, tepatnya sejak 2016 hingga sekarang. Pada tahun 2016, aplikasi yang saya gunakan antara lain Kinemaster, Pixellab, Picsay, dan PicsArt. Namun, sejak 2021 hingga saat ini, saya menggunakan aplikasi penyuntingan seperti Alight Motion, CapCut, Photoshop, Illustrator, After Effects, Figma, Blender, dan Pixellab.
+Saya telah membuat konten semacam ini selama beberapa tahun, tepatnya sejak 2016 hingga sekarang. Pada tahun 2016, aplikasi yang saya gunakan antara lain Kinemaster, Pixellab, Picsay, dan PicsArt. Namun, sejak 2021 hingga saat ini, saya menggunakan aplikasi editing seperti Alight Motion, CapCut, Photoshop, Illustrator, After Effects, Figma, Blender, dan Pixellab.
 
-Mengapa saya membuat konten seperti itu? Karena di era saat ini, saya melihat banyak orang mengunggah video keren di media sosial. Saya pun mulai mencobanya setelah menonton tutorial di YouTube, hingga akhirnya saya menyadari adanya bakat terpendam dalam diri saya. Itulah alasan saya membuat konten semacam ini.
+Kenapa saya membuat konten seperti itu? Karena di era saat ini, saya melihat banyak orang mengunggah video keren entah animasi atau desain grafis di media sosial. Saya pun mulai mencobanya setelah menonton tutorial di YouTube, hingga akhirnya saya menyadari adanya bakat terpendam dalam diri saya. Itulah alasan saya membuat konten semacam ini.
 
 Demikian penjelasan singkat mengenai diri saya. Jika Anda ingin mengetahui lebih lanjut, silakan kirim pesan langsung (DM) atau hubungi saya. Sekian dan terima kasih.`,
     avatar: "https://files.catbox.moe/ke3ye3.jpg",
